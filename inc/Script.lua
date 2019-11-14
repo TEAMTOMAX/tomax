@@ -76,9 +76,9 @@ function string:starts(text)
   return text == string.sub(self,1,string.len(text))
 end
 
-function KaraJoinChannel(msg)
-if redis:get(max..'4DaySleep') then
-local url  = https.request('https://api.telegram.org/bot940044754:AAGY1zvFOrPoYdIUnAgHtHHpI-quJP5QTQM/getchatmember?chat_id=@uop70&user_id='..msg.sender_user_id_)
+function ZainJoinChannel(msg)
+if redis:get(brothers..'4DaySleep') then
+local url , res = https.request("https://api.telegram.org/bot"..token.."/getchatmember?chat_id=@cgngv&user_id="..msg.sender_user_id_);
 if res ~= 200 then
 end
 Joinchanel = json:decode(url)
@@ -89,7 +89,7 @@ USERNAME = '@'..data.username_
 else 
 USERNAME = FlterName(data.first_name_..' '..(data.last_name_ or ""),20) 
 end
-bd = '🙋🏻‍♂| العضو ['..USERNAME..'](tg://user?id='..msg.sender_user_id_..') \n📡| لأستخدام البوت عليك الاشتراك ب قناة السورس @GLOBLA'
+bd = '🙋🏻‍♂| العضو ['..USERNAME..'](tg://user?id='..msg.sender_user_id_..') \n📡| لأستخدام البوت عليك الاشتراك ب قناة السورس @cgngv'
 sendMsg(msg.chat_id_,msg.id_,bd)
 end,nil)
 return false
