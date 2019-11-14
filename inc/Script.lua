@@ -89,7 +89,7 @@ USERNAME = '@'..data.username_
 else 
 USERNAME = FlterName(data.first_name_..' '..(data.last_name_ or ""),20) 
 end
-bd = '🙋🏻‍♂| العضو ['..USERNAME..'](tg://user?id='..msg.sender_user_id_..') \n📡| لأستخدام البوت عليك الاشتراك ب قناة السورس @cgngv'
+bd = '📮| العضو ['..USERNAME..'](tg://user?id='..msg.sender_user_id_..') \n📡| لأستخدام البوت عليك الاشتراك ب قناة السورس @cgngv'
 sendMsg(msg.chat_id_,msg.id_,bd)
 end,nil)
 return false
@@ -1167,7 +1167,7 @@ if redis:get(brothers.."getidstatus"..msg.chat_id_) == "Photo" then
 		ali = {'حلك ببكن 🙈🌝','فدوه الله💫❤','عمي والله مااصايره🙁😹','ما مرتاحلك🌝','منور ئلكمر 🌝✨','شدتحس؟  🤕','حفظك ابو هاشم🌚😹','يحفضك ئلسيد 🌝','شنـهاي جنك كيكا 🤤??','دلهـا لتكفرني 😑💔'} 
 		ssssys = ali[math.random(#ali)]
 		if not redis:get("KLISH:ID") then
-		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,''..ssssys..'\n📌╣ايديـك ~⪼ '..msg.sender_user_id_..' \n📮╣معرفـك ~⪼ '..UserNameID..' \n👮🏻‍♂️╣رتبتـك ~⪼ '..msg.TheRank..' \n🏅╣تفاعلك ~⪼ '..Get_Ttl(msgs)..' \n✉️╣رسائلك ~⪼ '..msgs..' \n🏷╣سحكاتـك ~⪼ '..rfih..'\n🏆╣مجوهراتك ~⪼ '..nko..' \n',dl_cb,nil)
+		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,''..ssssys..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n🎭¦معرفـك • '..UserNameID..' \n📌¦موقعك • '..msg.TheRank..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك • '..rfih..'\n💎¦مجوهراتك • '..nko..' \n',dl_cb,nil)
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1182,7 +1182,7 @@ if redis:get(brothers.."getidstatus"..msg.chat_id_) == "Photo" then
 		end
 	else
 		if not redis:get("KLISH:ID") then
-		sendMsg(msg.chat_id_,msg.id_,'📮╣معرفـك ~⪼ '..UserNameID..'\n📌╣ايديـك ~⪼ '..msg.sender_user_id_..' \n👮🏻‍♂️╣رتبتـك ~⪼ '..msg.TheRank..' \n🏅╣تفاعلك ~⪼ '..Get_Ttl(msgs)..' \n✉️╣رسائلك ~⪼ '..msgs..' \n🏷╣سحكاتـك ~⪼ '..rfih..'  \n🏆┇مجوهراتك ~⪼ '..nko..' \n')
+		sendMsg(msg.chat_id_,msg.id_,'🎭¦معرفـك • '..UserNameID..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n📌¦موقعك • '..msg.TheRank..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك • '..msgs..' \n✏️¦سحكاتـك • '..rfih..'  \n💎¦مجوهراتك • '..nko..' \n')
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1209,7 +1209,7 @@ else
 		Text = Text:gsub('User_Points',nko)
 		sendMsg(msg.chat_id_,msg.id_,Flter_Markdown(Text))
 		else
-		sendMsg(msg.chat_id_,msg.id_,'📮╣معرفـك ~⪼ '..UserNameID..'\n📌╣ايديـك ~⪼ '..msg.sender_user_id_..' \n👮🏻‍♂️╣رتبتـك ~⪼ '..msg.TheRank..' \n🏅╣تفاعلك ~⪼ '..Get_Ttl(msgs)..' \n✉️╣رسائلك ~⪼ '..msgs..' \n🏷╣سحكاتـك ~⪼ '..rfih..' \n🏆╣مجوهراتك ~⪼ '..nko..' \n')
+		sendMsg(msg.chat_id_,msg.id_,'🎭¦معرفـك • '..UserNameID..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n📌¦موقعك • '..msg.TheRank..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك • '..msgs..' \n✏️¦سحكاتـك • '..rfih..' \n💎¦مجوهراتك • '..nko..' \n')
 		end
 end
 
@@ -2056,7 +2056,7 @@ return [[
 📌┇*م6* » *لاضـافه* *رد* *مـعين*
 😹┇*م7* » *اوامـر* *التحشيش*
 
- ‏‎‏👨🏻‍💻┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
+ [☑️┋Channel Brothers](http://t.me/cgngv)
 end
 if MsgText[1]== 'م1' then
 if not msg.Admin then return "👨🏻‍💻*¦* {الادمن,المدير,المنشئ,المطور} فقط" end
@@ -2088,7 +2088,7 @@ local text =[[
 ⏺️┇*الغاء* *منع* ⇜ *لالغاء* *منع* *الكلمه*
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-👨🏻‍💻┊ راسلني للاستفسار 💡☜ ]]..SUDO_USER
+[☑️┋Channel Brothers](http://t.me/cgngv)
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2117,7 +2117,7 @@ local text = [[
 🌬️┇*المجموعه* ↭ *لعرض* *معلومات* *المجموعه*
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-👨🏻‍💻┊راسلني للاستفسار 💡☜ ]]..SUDO_USER
+[☑️┋Channel Brothers](http://t.me/cgngv)
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2169,7 +2169,7 @@ local text = [[
 👨🏻‍✈️┇*تفعيل* «» *تعطيل* ❪ *الرفع* ❫
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-👨🏻‍💻┊ للاستفسار 💡☜ ]]..SUDO_USER
+[☑️┋Channel Brothers](http://t.me/cgngv)
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2198,7 +2198,7 @@ local text = [[
 🃏┇زخرفه ⇜ لزخرفه اي شئ تريد 
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-👨🏻‍💻┊راسلني للاستفسار 💡☜ ]]..SUDO_USER
+[☑️┋Channel Brothers](http://t.me/cgngv)
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2229,7 +2229,7 @@ local text = [[
 ♻️┇تحديث السورس ↭ لتحديث السورس 
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-👨🏻‍💻┇راسلني للاستفسار 💡☜ ]]..SUDO_USER
+[☑️┋Channel Brothers](http://t.me/cgngv)
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2247,7 +2247,7 @@ local text = [[
 📌┇مسح رد عام ⇜ لمسح الرد العام 
 📌┇مسح الردود العامه ⇜ لمسح كل ردود العامه
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-👨🏻‍💻┇راسلني للاستفسار 💡↭ ]]..SUDO_USER
+[☑️┋Channel Brothers](http://t.me/cgngv)
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2296,7 +2296,8 @@ return [[
 📯┇BroTherS TeAm
 
 🔎┇[قناه السورس](t.me/cgngv) 
-🔎┇[مطور السورس](t.me/sajad14p) 
+			
+👮‍♂️┇[مطور السورس](t.me/sajad14p) 
 
 🔋┇[كليشه التنصيب](https://t.me/cgngv/273) 
 
@@ -2754,7 +2755,7 @@ NumPvDel = NumPvDel + 1
 end
 if #pv == i then 
 local SenderOk = #pv - NumPvDel
-sendMsg(msg.chat_id_,msg.id_,'🙍🏻‍♂*┊*عدد المشتركين : ❴ '..#pv..' ❵\n🗣*┊*تم الاذاعه الى ❴ '..SenderOk..'  ❵ مشترك \n ✓') 
+sendMsg(msg.chat_id_,msg.id_,'📮*┊*عدد المشتركين : ❴ '..#pv..' ❵\n☑️*┊*تم الاذاعه الى ❴ '..SenderOk..'  ❵ مشترك \n ✓') 
 end
 end)
 end
@@ -2764,7 +2765,7 @@ if redis:get(brothers..'fwd:groups'..msg.sender_user_id_) then ---- استقبا
 redis:del(brothers..'fwd:groups'..msg.sender_user_id_)
 local groups = redis:smembers(brothers..'group:ids')
 if #groups >= 300 then
-sendMsg(msg.chat_id_,msg.id_,'📑┊اهلا عزيزي المطور \n🔖┊جاري نشر الرساله للمجموعات ...')			
+sendMsg(msg.chat_id_,msg.id_,'👮‍♂️┊اهلا عزيزي المطور \n🔖┊جاري نشر الرساله للمجموعات ...')			
 end
 local NumGroupsDel = 0
 for i = 1, #groups do 
@@ -2779,7 +2780,7 @@ end
 if #groups == i then
 local AllGroupSend = #groups - NumGroupsDel
 if NumGroupsDel ~= 0 then
-MsgTDel = '📛*┊*تم حذف ❴ *'..NumGroupsDel..'* ❵ من قائمه الاذاعه لانهم قامو بطرد البوت من المجموعه'
+MsgTDel = '♻️*┊*تم حذف ❴ *'..NumGroupsDel..'* ❵ من قائمه الاذاعه لانهم قامو بطرد البوت من المجموعه'
 else
 MsgTDel = ''
 end
@@ -2815,7 +2816,7 @@ end
 for i = 1, #groups do 
 fwdMsg(groups[i],msg.chat_id_,msg.id_,dl_cb,nil)
 end
-return sendMsg(msg.chat_id_,msg.id_,'📜*┊*تم اذاعه التوجيه بنجاح 🏌🏻\n🗣*┊*للمـجمـوعآت » ❴ *'..#groups..'* ❵\n👥*┊*للخآص » ❴ '..#pv..' ❵\n✓')			
+return sendMsg(msg.chat_id_,msg.id_,'📮*┊*تم اذاعه التوجيه بنجاح 🏌🏻\n📡*┊*للمـجمـوعآت » ❴ *'..#groups..'* ❵\n📭*┊*للخآص » ❴ '..#pv..' ❵\n✓')			
 end
 
  
@@ -2832,7 +2833,7 @@ end
 if msg.photo and redis:get(brothers..'welcom_ph:witting'..msg.sender_user_id_) then
 redis:del(brothers..'welcom_ph:witting'..msg.sender_user_id_)
 redis:set(brothers..':WELCOME_BOT',photo_id)
-sendMsg(msg.chat_id_,msg.id_,'🚸┇تم تغيير صـورهہ‏‏ آلترحيب للبوت 🌿\n✓')
+sendMsg(msg.chat_id_,msg.id_,'☑️┇تم تغيير صـورهہ‏‏ آلترحيب للبوت ♻️\n✓')
 return false
 end 
 
