@@ -3764,6 +3764,8 @@ elseif Text== "شغل ضوه"  then  return sendMsg(msg.chat_id_,msg.id_,"ميح
 elseif Text== "مرحبا"  then return sendMsg(msg.chat_id_,msg.id_,"  مٌـﮩۚـرحـﮩۘـتين")
 elseif Text== "سلام" or Text== "السلام عليكم" or Text== "سلام عليكم" or Text=="سلامن عليكم" or Text=="السلامن عليكم" then 
 return sendMsg(msg.chat_id_,msg.id_,"وعليكم السلام ورحمه حته الله😒😹 " )
+elseif Text== "مطور الاخوين" or Text== "مطور السورس" or Text== "مطور سورس" or Text=="مطور بوتات" or Text=="سجاد مطور سورس الاخوين" then
+return sendMsg(msg.chat_id_,msg.id_,"[اضغط هنا لدخول لمطور سورس ](t.me/sajad14p) " )
 elseif Text== "عضه"  then return sendMsg(msg.chat_id_,msg.id_,"شكلولك علي جلب؟ انته روح عضه 😕😹" )
 elseif Text== "🚶🏻‍♂"  then return sendMsg(msg.chat_id_,msg.id_," مٰ̲ہتَہَٰڪٰྀہٰٰٖليِٰہ شِٰہٰٰ؏ۤـہٰٰنَِٰہٰدڪٰྀہٰٰٖ تَہَٰمٰ̲ہشِٰہٰٰيِٰہ لخٰ̐ہآطر آللھہ 🤔")
 elseif Text== "البوت واكف" then return sendMsg(msg.chat_id_,msg.id_," اطردك ؟ 😒")
