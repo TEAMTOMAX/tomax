@@ -2056,7 +2056,7 @@ return [[
 📌┇*م6* » *لاضـافه* *رد* *مـعين*
 😹┇*م7* » *اوامـر* *التحشيش*
 
- [☑️┋Channel Brothers](http://t.me/cgngv)
+ 💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 end
 if MsgText[1]== 'م1' then
 if not msg.Admin then return "👨🏻‍💻*¦* {الادمن,المدير,المنشئ,المطور} فقط" end
@@ -2088,7 +2088,7 @@ local text =[[
 ⏺️┇*الغاء* *منع* ⇜ *لالغاء* *منع* *الكلمه*
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-[☑️┋Channel Brothers](http://t.me/cgngv)
+💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2117,7 +2117,7 @@ local text = [[
 🌬️┇*المجموعه* ↭ *لعرض* *معلومات* *المجموعه*
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-[☑️┋Channel Brothers](http://t.me/cgngv)
+💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2169,7 +2169,7 @@ local text = [[
 👨🏻‍✈️┇*تفعيل* «» *تعطيل* ❪ *الرفع* ❫
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-[☑️┋Channel Brothers](http://t.me/cgngv)
+💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2198,7 +2198,7 @@ local text = [[
 🃏┇زخرفه ⇜ لزخرفه اي شئ تريد 
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-[☑️┋Channel Brothers](http://t.me/cgngv)
+💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2229,7 +2229,7 @@ local text = [[
 ♻️┇تحديث السورس ↭ لتحديث السورس 
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-[☑️┋Channel Brothers](http://t.me/cgngv)
+💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
@@ -2247,7 +2247,7 @@ local text = [[
 📌┇مسح رد عام ⇜ لمسح الرد العام 
 📌┇مسح الردود العامه ⇜ لمسح كل ردود العامه
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-[☑️┋Channel Brothers](http://t.me/cgngv)
+💭┇رآسـلني للآسـتفسـآر ☜ { ]]..SUDO_USER..[[ } ✓ ]]
 sendMsg(msg.chat_id_,msg.id_,text)
 return false
 end
