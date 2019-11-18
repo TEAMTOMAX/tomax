@@ -462,7 +462,7 @@ return false
 end
 
 
-if MsgText[1] == "اضف مميز" then
+if MsgText[1] == "رفع مميز" then
 if not msg.Admin then return "👨🏻‍💻*¦* {المدير,المنشئ,المطور} فقط" end
 if not MsgText[2] and msg.reply_id then
 if redis:get(brothers..'lock:babak:'..msg.chat_id_) == 'off' then
@@ -501,7 +501,7 @@ return false
 end
 
 
-if (MsgText[1] == "اضف المدير"  or MsgText[1] == "اضف مدير" ) then
+if (MsgText[1] == "رفع المدير"  or MsgText[1] == "رفع مدير" ) then
 if not msg.Creator then return "👨🏻‍💻*¦* {المنشئ,المطور} فقط" end
 if not MsgText[2] and msg.reply_id then
 if redis:get(brothers..'lock:babak:'..msg.chat_id_) == 'off' then
@@ -540,7 +540,7 @@ return false
 end
 
 
-if (MsgText[1] == "اضف منشى اساسي" or MsgText[1] == "اضف منشئ اساسي") then
+if (MsgText[1] == "رفع منشى اساسي" or MsgText[1] == "رفع منشئ اساسي") then
 if not msg.SudoUser then return "👨🏻‍💻*┇* لـلـمـطـور فـقـط" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="setmnsha"})
@@ -570,7 +570,7 @@ return false
 end
 
 
-if (MsgText[1] == "اضف منشى" or MsgText[1] == "اضف منشئ") then
+if (MsgText[1] == "رفع منشى" or MsgText[1] == "رفع منشئ") then
 if not msg.HASSNBOT then return "👨🏻‍💻*¦* {المنشئ الاساسي,المطور} فقط" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="hassan"})
@@ -585,7 +585,7 @@ return false
 end
 
 
-if (MsgText[1] == "تنزيل منشى" or MsgText[1] == "تنزيل منشئ" ) then
+if (MsgText[1] == "رفع منشئ" or MsgText[1] == "تنزيل منشئ" ) then
 if not msg.HASSNBOT then return "👨🏻‍💻*¦* {المنشئ الاساسي,المطور} فقط" end
 if not MsgText[2] and msg.reply_id then
 GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="hassann"})
@@ -600,7 +600,7 @@ return false
 end
 
 
-if MsgText[1] == "اضف ادمن" then
+if MsgText[1] ==  "رفع ادمن" then
 if not msg.Director then return "👨🏻‍💻*¦* {المدير,المنشئ,المطور} فقط" end
 if not MsgText[2] and msg.reply_id then
 if redis:get(brothers..'lock:babak:'..msg.chat_id_) == 'off' then
@@ -824,7 +824,7 @@ end
 
 if MsgText[2] and MsgText[2]:match('^%d+$') then
 if not msg.Director then return "👨🏻‍💻*¦* {المدير,المنشئ,المطور} فقط" end
-if 500 < tonumber(MsgText[2]) then return "📮*┇* حدود المسح ,  يجب ان تكون ما بين  *[2-100]*" end
+if 10000 < tonumber(MsgText[2]) then return "📮*┇* حدود المسح ,  يجب ان تكون ما بين  *[2-10000]*" end
 local DelMsg = MsgText[2] + 1
 GetHistory(msg.chat_id_,DelMsg,function(arg,data)
 All_Msgs = {}
@@ -3928,11 +3928,11 @@ brothers = {
 "^(تفعيل الرفع)$",
 "^(قفل الدخول)$",
 "^(فتح الدخول)$", 
-"^(ايدي)$",
-"^(ايدي) (@[%a%d_]+)$",
-"^(ايدي العضو)$",
-"^(ايدي العضو) (%d+)$",
-"^(ايدي العضو) (@[%a%d_]+)$",
+'^(ايدي العضو)$',
+'^(ايدي العضو) (@[%a%d_]+)$',
+'^(ايدي)$',
+'^(ايدي) (%d+)$',
+'^(ايدي) (@[%a%d_]+)$',
 '^(اضف مميز)$',
 '^(اضف مميز) (@[%a%d_]+)$',
 '^(اضف مميز) (%d+)$',
