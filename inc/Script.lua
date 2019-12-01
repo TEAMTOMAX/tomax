@@ -316,7 +316,22 @@ if not msg.Admin then return "👨🏻‍💻*¦* {الادمن,المدير,ا�
 return GetListAdmin(msg) 
 end
 
-if MsgText[1] == "تاك للكل" then 
+if MsgText[1] == "تاك للكل" then
+if not msg.Admin then return "📮┇ هذا الامر يخص {الادمن,المدير,المنشئ,المطور} فقط  \n📌" end
+tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
+},function(ta,taha)
+local t = "\n🔘┇ قائمة الاعضاء المتفاعلين  \n━━━━━━━━━━━━━\n"
+x = 0
+local list = taha.members_
+for k, v in pairs(list) do
+x = x + 1
+t = t..""..x.." - {["..v.user_id_.."](tg://user?id="..v.user_id_..")} \n"
+end
+send_msg(msg.chat_id_,t,msg.id_)
+end,nil)
+end
+
+if MsgText[1] == "تاك" then 
 if not msg.Admin then return "👨🏻‍💻*¦* {الادمن,المدير,المنشئ,المطور} فقط" end
 return ownerlist(msg) .. GetListAdmin(msg) .. whitelist(msg)
 end
@@ -824,7 +839,7 @@ end
 
 if MsgText[2] and MsgText[2]:match('^%d+$') then
 if not msg.Director then return "👨🏻‍💻*¦* {المدير,المنشئ,المطور} فقط" end
-if 100000 < tonumber(MsgText[2]) then return "📮*┇* حدود المسح ,  يجب ان تكون ما بين  *[2-100000]*" end
+if 100000 < tonumber(MsgText[2]) then return "??*┇* حدود المسح ,  يجب ان تكون ما بين  *[2-100000]*" end
 local DelMsg = MsgText[2] + 1
 GetHistory(msg.chat_id_,DelMsg,function(arg,data)
 All_Msgs = {}
@@ -2329,7 +2344,7 @@ end
 
 
 if MsgText[1] == "تفعيل الاشتراك الاجباري" or MsgText[1] == "تفعيل الاشتراك الاجباري ☑️" then
-if not msg.SudoBase then return"👨🏻‍💻*┇* للمطـور الاساسي فقط" end
+if not msg.SudoBase then return"👨??‍💻*┇* للمطـور الاساسي فقط" end
 if redis:get(brothers..":UserNameChaneel") then
 return "📑┊اهلا عزيزي المطور \n🔖┊الاشتراك بالتأكيد مفعل"
 else
@@ -4051,6 +4066,7 @@ brothers = {
 "^(ضع التكرار)$",
 "^(الادمنيه)$",
 "^(تاك للكل)$",
+"^(تاك)$",
 "^(قائمه المنع)$",
 "^(المنشئيين)$",
 "^(المدراء)$",
