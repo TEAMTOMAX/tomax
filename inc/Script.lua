@@ -1182,7 +1182,7 @@ if redis:get(brothers.."getidstatus"..msg.chat_id_) == "Photo" then
 		ali = {'حلك ببكن 🙈🌝','فدوه الله💫❤','عمي والله مااصايره🙁😹','ما مرتاحلك🌝','منور ئلكمر 🌝✨','شدتحس؟  🤕','حفظك ابو هاشم🌚😹','يحفضك ئلسيد 🌝','شنـهاي جنك كيكا 🤤??','دلهـا لتكفرني 😑💔'} 
 		ssssys = ali[math.random(#ali)]
 		if not redis:get("KLISH:ID") then
-		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,''..ssssys..'\n🎟¦ايديـك •  '..msg.sender_user_id_..' \n🎭¦معرفـك •  '..UserNameID..' \n📌¦موقعك • '..msg.TheRank..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك •  '..rfih..'\n💎¦مجوهراتك • '..nko..' \n',dl_cb,nil)
+		sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,''..ssssys..'\n🎟¦ايديـك •  '..msg.sender_user_id_..' \n🎭¦معرفـك •  '..UserNameID..' \n📌¦موقعك • '..msg.TheRank..' \n🌄¦ عدد صورك •  '..NumGha..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك •  '..rfih..'\n💎¦مجوهراتك • '..nko..' \n',dl_cb,nil)
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1197,7 +1197,7 @@ if redis:get(brothers.."getidstatus"..msg.chat_id_) == "Photo" then
 		end
 	else
 		if not redis:get("KLISH:ID") then
-		sendMsg(msg.chat_id_,msg.id_,'🎭¦معرفـك •  '..UserNameID..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n📌¦موقعك • '..msg.TheRank..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك •  '..rfih..'  \n💎¦مجوهراتك • '..nko..' \n')
+		sendMsg(msg.chat_id_,msg.id_,'🎭¦معرفـك •  '..UserNameID..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n📌¦موقعك • '..msg.TheRank..' \n🌄¦ عدد صورك •  '..NumGha..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك •  '..rfih..'  \n💎¦مجوهراتك • '..nko..' \n')
 		else
 		Text = redis:get("KLISH:ID")
 		Text = Text:gsub('IDGET',msg.sender_user_id_)
@@ -1224,7 +1224,7 @@ else
 		Text = Text:gsub('User_Points',nko)
 		sendMsg(msg.chat_id_,msg.id_,Flter_Markdown(Text))
 		else
-		sendMsg(msg.chat_id_,msg.id_,'🎭¦معرفـك •  '..UserNameID..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n📌¦موقعك • '..msg.TheRank..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك •  '..rfih..' \n💎¦مجوهراتك • '..nko..' \n')
+		sendMsg(msg.chat_id_,msg.id_,'🎭¦معرفـك •  '..UserNameID..'\n🎟¦ايديـك • '..msg.sender_user_id_..' \n📌¦موقعك • '..msg.TheRank..' \n🌄¦ عدد صورك •  '..NumGha..' \n🎲¦تفاعلك • '..Get_Ttl(msgs)..' \n💌¦رسائلك •  '..msgs..' \n✏️¦سحكاتـك •  '..rfih..' \n💎¦مجوهراتك • '..nko..' \n')
 		end
 end
 
