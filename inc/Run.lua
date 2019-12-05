@@ -334,10 +334,11 @@ kick_user(msg.sender_user_id_, msg.chat_id_)
 end
 if msg.content_.members_[0].id_ == our_id and redis:get(brothers..':WELCOME_BOT') then
 SUDO_USER = redis:hgetall(brothers..'username:'..SUDO_ID).username
-sendPhoto(msg.chat_id_,msg.id_,redis:get(brothers..':WELCOME_BOT'),[[🙋🏽‍♂╿ مـرحبآ آنآ بوت آسـمـي ]]..redis:get(brothers..':NameBot:')..[[ ⚜
-⚔│ آختصـآصـي حمـآيهہ‌‏ آلمـجمـوعآت
-🚸│ مـن آلسـبآم وآلتوجيهہ‌‏ وآلتگرآر وآلخ...
-⚖️╽ مـعرف آلمـطـور  : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
+sendPhoto(msg.chat_id_,msg.id_,redis:get(brothers..':WELCOME_BOT'),[[🙋🏽‍♂*┊* مـرحبآ آنآ بوت آسـمـي ]]..redis:get(brothers..':NameBot:')..[[ ⚜
+⚔*┊* آختصـآصـي حمـآيهہ‌‏ آلمـجمـوعآت
+🚸*┊* مـن آلسـبآم وآلتوجيهہ‌‏ وآلتگرآر وآلخ...
+🖲*┊* [اضغط هنا دخول لقناة سورس ](t.me/cgngv) •
+⚖️*┊*مـعرف آلمـطـور  : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
 ]])
 return false
 end
@@ -469,16 +470,16 @@ function tdcli_update_callback(data)
 	UpdateSourceStart = false
 	EditMsg(data.message_.chat_id_,data.message_.id_,'10% - |█          |')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'20% - |███         |')
-	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/inc/Run.lua','./inc/Run.lua')
+	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/Run.lua','./inc/Run.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'40% - |█████       |')
-	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/inc/locks.lua','./inc/locks.lua')
+	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/locks.lua','./inc/locks.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'60% - |███████     |')
-	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/inc/Script.lua','./inc/Script.lua')
+	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/Script.lua','./inc/Script.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'80% - |█████████   |')
-	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/inc/functions.lua','./inc/functions.lua')
-	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/plugins/zhrfa.lua','./plugins/zhrfa.lua')
-	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/plugins/games.lua','./plugins/games.lua')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'100% - |█████████████|\n\n🔝*¦* السورس الى اصدار \n📟*¦* تم اعاده تشغيل السورس بنجاح')
+	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/functions.lua','./inc/functions.lua')
+	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/zhrfa.lua','./plugins/zhrfa.lua')
+	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/games.lua','./plugins/games.lua')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'100% - |█████████████|\n\n🔘*¦* السورس الى اصدار \n📂*¦* تم اعاده تشغيل السورس بنجاح')
 	dofile("./inc/Run.lua")
 	print("Update Source And Reload ~ ./inc/Run.lua")
 	end
@@ -501,7 +502,7 @@ function tdcli_update_callback(data)
 	end
 	msg.text = msg.content_.text_
 	if (msg.text=="تحديث" or msg.text=="we" or msg.text=="تحديث ♻️") and msg.sender_user_id_ == SUDO_ID then
-	return sendMsg(msg.chat_id_,msg.id_," 🗂┇تہ‏‏م تحديث آلمـلفآت \n✓",nil,function(arg,data)
+	return sendMsg(msg.chat_id_,msg.id_," 📌┇تہ‏‏م تحديث آلمـلفآت \n✓",nil,function(arg,data)
 	Refresh_Start = true
 	end)
 	end 
@@ -512,13 +513,13 @@ function tdcli_update_callback(data)
 	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/inc/locks.lua','./inc/locks.lua')
 	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/plugins/zhrfa.lua','./plugins/zhrfa.lua')
 	download_file('https://raw.githubusercontent.com/BrothersTeam/Brothers/master/plugins/games.lua','./plugins/games.lua')
-	sendMsg(msg.chat_id_,msg.id_,'👷🏽| {* تــم تحديث وتثبيت السورس  *} 📡.\n\n👨🏼‍💼| { Bot is Update » }👍🏿',nil,function(arg,data)
+	sendMsg(msg.chat_id_,msg.id_,'🔍| {* تــم تحديث وتثبيت السورس  *} 📌.\n\n🔘| { Bot is Update » }⛔',nil,function(arg,data)
 	dofile("./inc/Run.lua")
 	print("Reload ~ ./inc/Run.lua")
 	end) 
 	end
 	if msg.text== 'reload' and msg.sender_user_id_ == SUDO_ID then
-	sendMsg(msg.chat_id_,msg.id_,'👷🏽| {* تــم أعـاده تشغيل البوت  *} 📡.\n\n👨🏼‍💼| { Bot is Reloaded » }👍🏿',nil,function(arg,data)
+	sendMsg(msg.chat_id_,msg.id_,'📮| {* تــم أعـاده تشغيل البوت  *} 📁.\n\n🗳️| { Bot is Reloade » }⛔',nil,function(arg,data)
 	dofile("./inc/Run.lua")
 	print("Reload ~ ./inc/Run.lua")
 	end)
@@ -697,7 +698,7 @@ end
 	end
 	end
 	io.popen("rm -fr ../.telegram-cli/data/document/*")
-	sendMsg(Uploaded_Groups_CH,Uploaded_Groups_MS,'📦*¦* تم رفع آلنسـخهہ‏‏ آلآحتيآطـيهہ\n⚖️*¦* حآليآ عدد مـجمـوعآتگ هہ‏‏يهہ‏‏ *'..redis:scard(brothers..'group:ids')..'* 🌿\n✓')
+	sendMsg(Uploaded_Groups_CH,Uploaded_Groups_MS,'🔘*¦* تم رفع آلنسـخهہ‏‏ آلآحتيآطـيهہ\n🔍*¦* حآليآ عدد مـجمـوعآتگ هہ‏‏يهہ‏‏ *'..redis:scard(brothers..'group:ids')..'* 📌\n✓')
 	end
 	elseif data.ID == "UpdateUser" then  
 	if data.user_.type_.ID == "UserTypeDeleted" then
