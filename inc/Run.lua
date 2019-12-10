@@ -107,7 +107,7 @@ Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close() 
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "🙋🏼‍♂️┊اهلا عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \n🔍┊شكرا لاستخدامك سورس الاخوين \n📤┊أرســل  الان /start\n♦️┊لاضهار الاوامر للمطور  المجهزه بالكيبورد\n\n⚡️"
+local Text = "🙋🏼‍♂️┊اهلا عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \n🔍┊شكرا لاستخدامك سورس توماكس \n📤┊أرســل  الان /start\n♦️┊لاضهار الاوامر للمطور  المجهزه بالكيبورد\n\n⚡️"
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 os.execute([[
 rm -f ./README.md
@@ -128,11 +128,11 @@ print('\27[0;33m>>'..[[
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
-▇▇▇▇              ▇            ▇             تم تطوير وبرمجه من قبل ابو جود       ▇
+▇▇▇▇              ▇        @sajad14p    ▇          تم تطوير وبرمجه من قبل سجاد ويفار       ▇
 ▇           ▇           ▇            ▇                    ▇
-▇           ▇           ▇            ▇ ¦ @cgngv  ▇
-▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @sajad14p ▇▇▇   
+▇           ▇           ▇            ▇ ¦ @TEAM_NEMO  ▇
+▇           ▇           ▇            ▇                    ▇ ¦Dev :@vvvvpv
+▇▇▇▇  @vvvvpv ▇▇▇   
 -------------------------------------------------------------------
 ]]..'\027[0;32m')
 create_config() 
@@ -162,15 +162,15 @@ print(tostring(io.popen("lua inc/locks.lua"):read('*all')))
 end
 
 print('\27[0;33m>>'..[[
-    ▇▇▇▇ @sajad14p ▇▇▇            ▇▇▇▇▇▇▇
+  ▇▇▇▇ @sajad14p	▇▇▇        ▇▇▇▇▇▇▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
-▇▇▇▇              ▇        تم تطوير وبرمجه من قبل ابو جود    ▇                    ▇
+▇▇▇▇           @sajad14p   ▇        تم تطوير وبرمجه من قبل سجاد ويفار     ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
-▇           ▇           ▇            ▇ ¦ @cgngv  ▇
-▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @sajad14p ▇▇▇   
+▇           ▇           ▇            ▇ ¦ @TEAM_NEMO  ▇
+▇           ▇           ▇            ▇                    ▇ ¦Dev :@vvvvpv
+▇▇▇▇ @vvvvpv ▇▇▇   
 -------------------------------------------------------------------                                             
 ]]..'\027[0;32m'
 ..'¦ TOKEN_BOT: \27[1;34m'..Token..'\027[0;32m\n'
@@ -335,10 +335,10 @@ end
 if msg.content_.members_[0].id_ == our_id and redis:get(brothers..':WELCOME_BOT') then
 SUDO_USER = redis:hgetall(brothers..'username:'..SUDO_ID).username
 sendPhoto(msg.chat_id_,msg.id_,redis:get(brothers..':WELCOME_BOT'),[[🙋🏽‍♂*┊* مـرحبآ آنآ بوت آسـمـي ]]..redis:get(brothers..':NameBot:')..[[ ⚜
-⚔*┊* آختصـآصـي حمـآيهہ‌‏ آلمـجمـوعآت
-🚸*┊* مـن آلسـبآم وآلتوجيهہ‌‏ وآلتگرآر وآلخ...
-🖲*┊* [اضغط هنا دخول لقناة سورس ](t.me/cgngv) •
-⚖️*┊*مـعرف آلمـطـور  : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
+⚔┊ آختصـآصـي حمـآيهہ‌‏ آلمـجمـوعآت
+🚸┊ مـن آلسـبآم وآلتوجيهہ‌‏ وآلتگرآر وآلخ...
+🖲┊[اضغط هنا دخول لقناة سورس](t.me/TEAM_NEMO) •
+⚖️┊ مـعرف آلمـطـور   : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
 ]])
 return false
 end
@@ -470,15 +470,15 @@ function tdcli_update_callback(data)
 	UpdateSourceStart = false
 	EditMsg(data.message_.chat_id_,data.message_.id_,'10% - |█          |')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'20% - |███         |')
-	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/Run.lua','./inc/Run.lua')
+	download_file('https://raw.githubusercontent.com/TEAMTOMAX/TOMAX/master/inc/Run.lua','./inc/Run.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'40% - |█████       |')
-	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/locks.lua','./inc/locks.lua')
+	download_file('https://raw.githubusercontent.com/TEAMTOMAX/TOMAX/master/inc/locks.lua','./inc/locks.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'60% - |███████     |')
-	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/Script.lua','./inc/Script.lua')
+	download_file('https://raw.githubusercontent.com/TEAMTOMAX/TOMAX/master/inc/Script.lua','./inc/Script.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'80% - |█████████   |')
-	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/functions.lua','./inc/functions.lua')
-	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/zhrfa.lua','./plugins/zhrfa.lua')
-	download_file('https://raw.githubusercontent.com/BrotherssTEAM/BrothersTEAM/master/inc/games.lua','./plugins/games.lua')
+	download_file('https://raw.githubusercontent.com/TEAMTOMAX/TOMAX/master/inc/functions.lua','./inc/functions.lua')
+	download_file('https://raw.githubusercontent.com/TEAMTOMAX/TOMAX/master/inc/zhrfa.lua','./plugins/zhrfa.lua')
+	download_file('https://raw.githubusercontent.com/TEAMTOMAX/TOMAX/master/inc/games.lua','./plugins/games.lua')
 	EditMsg(data.message_.chat_id_,data.message_.id_,'100% - |█████████████|\n\n🔘*¦* السورس الى اصدار \n📂*¦* تم اعاده تشغيل السورس بنجاح')
 	dofile("./inc/Run.lua")
 	print("Update Source And Reload ~ ./inc/Run.lua")
@@ -649,7 +649,7 @@ end
 	if redis:get(brothers..'group:add-100'..data.channel_.id_) then
 	local linkGroup = (redis:get(brothers..'linkGroup-100'..data.channel_.id_) or "")
 	local NameGroup = (redis:get(brothers..'group:name-100'..data.channel_.id_) or "")
-	send_msg(SUDO_ID,"📛┇قام شخص بطرد البوت من المجموعه الاتيه : \n🏷┇ألايدي : `-100"..data.channel_.id_.."`\n🗯┇الـمجموعه : "..Flter_Markdown(NameGroup).."\n\n📮┇تـم مسح كل بيانات المجموعه بنـجاح ")
+	send_msg(SUDO_ID,"⚠️┇قام شخص بطرد البوت من المجموعه الاتيه : \n♻️┇ألايدي : `-100"..data.channel_.id_.."`\n👥┇الـمجموعه : "..Flter_Markdown(NameGroup).."\n\n☑️┇تـم مسح كل بيانات المجموعه بنـجاح ")
 	rem_data_group('-100'..data.channel_.id_)
 	end
 	end
