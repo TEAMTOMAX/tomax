@@ -1422,7 +1422,7 @@ end
 if MsgText[1] == "طرد" then
 if not msg.Admin then return "👨🏻‍💻*¦* {الادمن,المدير,المنشئ,المطور} فقط" end
 if not MsgText[2] and msg.reply_id then 
-GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{msg=msg,cmd="kick"})  
+GetMsgInfo(msg.chat_id_,msg.reply_id,action_by_reply,{8=msg,cmd="kick"})  
 return false
 end
 if MsgText[2] and MsgText[2]:match('^%d+$') then
@@ -1887,8 +1887,8 @@ end
 if (MsgText[1]== "ايدي" or MsgText[1]=="ايديي📌") and msg.type == "pv" then return  "\n👨🏻‍💻┊اهلن عزيزي المطور ايديك هوه ⏬\n\n🧟‍♂┊"..msg.sender_user_id_.."\n"  end
 
 if MsgText[1]== "قناة السورس 📡" and msg.type == "pv" then
-local inline = {{{text="⚜┇قنآهہ‏‏ آلسـورس ضـغـط هـنـآ ",url="t.me/TEAM_NEMO"}}}
-send_key(msg.sender_user_id_,'  [⚜┇قناة سورس : توماكس](t.me/TEAM_NEMO)',nil,inline,msg.id_)
+local inline = {{{text="⚜┇قنآهہ‏‏ آلسـورس ضـغـط هـنـآ ",url="t.me/TEAM_Tomax"}}}
+send_key(msg.sender_user_id_,'  [⚜┇قناة سورس : توماكس](t.me/TEAM_Tomax)',nil,inline,msg.id_)
 return false
 end
 
@@ -2310,13 +2310,13 @@ return [[
 
 📯┇TOMAX TEAM
 
-🔎┇[قناه السورس](t.me/TEAM_NEMO) 
+🔎┇[قناه السورس](t.me/TEAM_Tomax) 
 
 👮‍♂️┇[مطور السورس الاول](t.me/sajad14p)
 
 👮‍♂️┇[مطور السورس الثاني](t.me/vvvvpv)
 
-🔋┇[كليشه التنصيب](https://t.me/TEAM_NEMO/53) 
+🔋┇[كليشه التنصيب](https://t.me/TEAM_Tomax/53) 
 
 
 📮┇[لــ تواصل](t.me/Mu00bot)
