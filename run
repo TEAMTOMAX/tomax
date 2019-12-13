@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 
-▇▇▇▇ @vvvvpv ▇▇▇            ▇▇▇▇▇▇▇
+▇▇▇▇ @TEAM_TOMAX ▇▇▇            ▇▇▇▇▇▇▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
@@ -9,7 +9,7 @@
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇ ¦ @cgngv  ▇
 ▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @vvvvpv ▇▇▇                        ▇ ¦Source brothers BY @@P_P_Z
+▇▇▇▇ @TEAM_TOMAX ▇▇▇                        ▇ ¦Source brothers BY @@P_P_Z
 #-------------------------------------------------------------------
 cd $(cd $(dirname $0); pwd)
  
@@ -25,7 +25,7 @@ Version=`lsb_release -rs | cut -f1 -d"."`
 
 if [ "$Version" == "18" ];then
 echo -e "${GREEN}
-▇▇▇▇ @vvvvpv ▇▇▇            ▇▇▇▇▇▇▇
+▇▇▇▇ @TEAM_TOMAXv ▇▇            ▇▇▇▇▇▇▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇                    ▇
@@ -33,7 +33,7 @@ echo -e "${GREEN}
 ▇           ▇           ▇            ▇                    ▇
 ▇           ▇           ▇            ▇ ¦ @cgngv  ▇
 ▇           ▇           ▇            ▇                    ▇ ¦Dev :@sajad14p
-▇▇▇▇ @vvvvpv ▇▇▇                        ▇ ¦Source brothers BY @@P_P_Z
+▇▇▇▇ @TEAM_TOMAX ▇▇▇                        ▇ ¦Source brothers BY @@P_P_Z
 ----------------------------------------------------------------------${CNIL}"
 echo -e "${RED}| للاسف لايمكنك تنصيب السورس ع نظام اوبنتو {${Version}} يجب ان يكون على اصدار  اقل مثلا  ${SMAY}14 او 16
 ${CNIL}";
